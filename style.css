@@ -1,21 +1,27 @@
-body{
-    font-size: var(--fs-400);
-    min-height: 100px;
-    display: flex;
+
+
+table{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.234em;
     line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.container{
-    background-color: rosybrown;
+td{ font-family:Georgia, 'Times New Roman', Times, serif;
+   
 
-    text-align: center;
 }
+.container{ background-color: rgb(240, 170, 41);
+    }
 
-.font{ 
+.border-1{ 
+    padding:0 1em;
+    max-width: 60rem;
+    margin: auto;
+    border: 12px ridge rgb(23, 22, 22);
 
 }
 
@@ -23,4 +29,13 @@ body{
     text-align: center;
     font-family: fantasy;
     font-size: 150%;
+    font-weight:600;
+    color: black
+    
+}
+
+button{
+    cursor: pointer;
+    transition-delay: 0.2s ease;
+
 }

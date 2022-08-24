@@ -6,30 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
-<body>
+<body class="container">
 <br>
-<!--The form -->
-<h3 class="header-1">Personal TV guide</h3>
+<h3 class="header-1">Personal TV Guide</h3>
 <br>
-<div class="container">
+<div>
 <!--Main part of my app-->
 <div class="border-1">
-
-<div class="row">
-  <div class="col-sm"></div>
-  <div class="form-group">
-  <label for="new-start-date"></div>
-   <input type="date" class="form-control" id="new-start-date">
-  </div>
+  <div class="row">
     <div class="col-sm">
-     <label for="new-time"></label>
-       <input type="time" >
+    <label for="new-show">What do you want to watch?</label>
+    <button id="add" type="button" class="btn btn-primary">Add Show</button>
+    <input type="text" class="form-control" id="new-show" placeholder="">
     </div>
+    <br>
+   <div class="col-sm">
+    <div class="form-group">
+    <label for="new-start-date">When are you free?</div>
+     <input type="date" class="form-control" id="new-date">
+   </div>
+     <div class="col-sm">
+      <label for="appt">What time works best for you?</label>
+        <input type="time" id="appt" name="appt" >
+     </div>
+    </div>
+    
   </div>
+  
 </div>
+<!--The results from the form are displayed in this table-->
+ <table id="list" class="table table-dark table-striped">
+  <tr>
+    <th>Delete Show</th>
+    <th>Show</th>
+    <th>Date You're Watching</th>
+    <th>Time You're Watching</th>
+  </tr>
+ </table>
+
 </body>
-</html>
 <script src="node_modules/jquery/dist/jquery.js"></script>
-<script src="app.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="app.js"></script>
+</html>
