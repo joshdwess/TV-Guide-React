@@ -1,0 +1,26 @@
+body{
+    font-size: var(--fs-400);
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.234em;
+    line-height: 1.6;
+}
+
+.container{
+    background-color: rosybrown;
+
+    text-align: center;
+}
+
+.font{ 
+
+}
+
+.header-1{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 150%;
+}
